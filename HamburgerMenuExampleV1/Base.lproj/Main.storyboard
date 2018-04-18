@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dKd-Se-LeI">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HamburgerMenuExampleV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bK8-7S-JX2">
+                                <rect key="frame" x="20" y="118" width="200" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwl-RJ-TaC">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="icons8_verde" translatesAutoresizingMaskIntoConstraints="NO" id="4oM-3P-45u">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jv-ht-yJE">
+                                                <rect key="frame" x="26" y="0.0" width="112" height="30"/>
+                                                <state key="normal" title="To green Screen">
+                                                    <color key="titleColor" red="0.11539316966557099" green="0.66641029792746109" blue="0.18158797696683759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Rvw-q1-TR3" kind="show" id="ez7-EU-K5O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-i4-KKv">
+                                        <rect key="frame" x="0.0" y="30" width="95" height="30"/>
+                                        <state key="normal" title="To red Screen">
+                                            <color key="titleColor" red="0.66641029792746109" green="0.092602180652315902" blue="0.11774223264497286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eMU-9w-hWb" kind="show" id="W7k-Gp-rET"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-2n-guk">
+                                        <rect key="frame" x="0.0" y="60" width="102" height="30"/>
+                                        <state key="normal" title="To blue Screen">
+                                            <color key="titleColor" red="0.15206488379999999" green="0.26145302329999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="u4r-3F-0GK" kind="show" id="QbJ-hf-kax"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Ck9-Yc-8DX"/>
+                                    <constraint firstAttribute="width" constant="200" id="Y3A-79-wYW"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-BI-pnF" userLabel="Home View">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nssl0034" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-BY-7z3">
+                                        <rect key="frame" x="8" y="10" width="304" height="484"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83083711139896377" green="0.83083711139896377" blue="0.83083711139896377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="8hq-BY-7z3" secondAttribute="trailing" id="93N-7e-qMT"/>
+                                    <constraint firstAttribute="bottom" secondItem="8hq-BY-7z3" secondAttribute="bottom" constant="10" id="9WL-cw-2XW"/>
+                                    <constraint firstItem="8hq-BY-7z3" firstAttribute="leading" secondItem="LNM-BI-pnF" secondAttribute="leadingMargin" id="Yjz-IX-Lle"/>
+                                    <constraint firstItem="8hq-BY-7z3" firstAttribute="top" secondItem="LNM-BI-pnF" secondAttribute="top" constant="10" id="iBO-uy-XCU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bK8-7S-JX2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="A69-Pg-Jsb"/>
+                            <constraint firstItem="bK8-7S-JX2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="heh-oZ-Opg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LNM-BI-pnF" secondAttribute="trailing" id="lSq-SC-jVT"/>
+                            <constraint firstItem="LNM-BI-pnF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nrM-1o-kSF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LNM-BI-pnF" secondAttribute="bottom" id="rcs-xR-We2"/>
+                            <constraint firstItem="LNM-BI-pnF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rdW-rM-Ngu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O6g-mM-q8s">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburger_icons8" id="So8-aO-rBi">
+                            <color key="tintColor" red="0.15206488376166816" green="0.26145302332164255" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="hamburgerIcontapped:" destination="BYZ-38-t0r" id="1hI-Le-0oP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="HomeView" destination="LNM-BI-pnF" id="5WU-XF-PVp"/>
+                        <outlet property="homeViewLeading" destination="nrM-1o-kSF" id="Qcv-QS-VVH"/>
+                        <outlet property="homeViewTrailing" destination="lSq-SC-jVT" id="qx0-aK-VLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.5" y="-578.87323943661977"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XUh-EV-8al">
+            <objects>
+                <viewController id="eMU-9w-hWb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o3j-5C-Avt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.66641029789999995" green="0.092602180650000004" blue="0.1177422326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PLD-t7-rcK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EZ-NT-WKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="-752"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WyF-PU-188">
+            <objects>
+                <viewController id="u4r-3F-0GK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yCw-kx-eTn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15206488379999999" green="0.26145302329999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8u3-fK-bGV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bj7-H9-Sjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-372"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PKp-7H-zqZ">
+            <objects>
+                <viewController id="Rvw-q1-TR3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ErM-EU-TLh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.11539316970000001" green="0.66641029789999995" blue="0.18158797700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sgR-kz-M79"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nor-o9-aHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-1265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aQr-iK-WSd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dKd-Se-LeI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6b7-Qh-geN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U06-Ib-2So"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYg-FX-6W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburger_icons8" width="50" height="50"/>
+        <image name="icons8_verde" width="26" height="26"/>
+        <image name="nssl0034" width="1024" height="768"/>
+    </resources>
+</document>
